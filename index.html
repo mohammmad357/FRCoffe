@@ -1,62 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FR Café Menu</title>
 
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
 
-  <!-- فونت کلاسیک -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FR Coffee Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
+
 </head>
 
 <body>
 
-  <div class="bg"></div>
-  <div class="overlay"></div>
+    <div class="bg"></div>
 
-  <div class="container">
+    <div class="overlay"></div>
 
-    <!-- HEADER با لوگو -->
-    <header class="header">
+    <main class="container">
 
-      <img class="logo"
-           src="2.png"
-           alt="FR Logo">
+        <header>
 
-      <h1>FR Café</h1>
-      <p>Digital Menu</p>
+            <img src="logo.png"
+                 class="logo"
+                 alt="FR Coffee">
 
-    </header>
+            <h1>FR Coffee</h1>
 
-    <!-- Coffee -->
-    <section class="menu-section">
-      <h2>Coffee ☕</h2>
+            <p>منوی دیجیتال</p>
 
-      <div class="item"><span>Espresso(اسپرسو)</span><span>110 T</span></div>
-      <div class="item"><span>Americano</span><span>100 T</span></div>
-      <div class="item"><span>Latte</span><span>120 T</span></div>
-      <div class="item"><span>HotChoclate</span><span>150 T</span></div>
-    </section>
+        </header>
 
-    <!-- Cold Drinks -->
-    <section class="menu-section">
-      <h2>Cold Drinks 🧊</h2>
+        <nav class="tabs">
 
-      <div class="item"><span>Iced Coffee</span><span>110 T</span></div>
-      <div class="item"><span>Lemonade</span><span>90 T</span></div>
-    </section>
+            <button class="tab active"
+                    data-tab="hot">
+                ☕ بار گرم
+            </button>
 
-    <!-- Desserts -->
-    <section class="menu-section">
-      <h2>Desserts 🍰</h2>
+            <button class="tab"
+                    data-tab="cold">
+                🧊 بار سرد
+            </button>
 
-      <div class="item"><span>Cheesecake</span><span>150 T</span></div>
-      <div class="item"><span>Brownie</span><span>130 T</span></div>
-    </section>
+            <button class="tab"
+                    data-tab="pizza">
+                🍕 پیتزا
+            </button>
 
-  </div>
+            <button class="tab"
+                    data-tab="pasta">
+                🍝 پاستا
+            </button>
+
+            <button class="tab"
+                    data-tab="shake">
+                🥤 شیک
+            </button>
+
+            <button class="tab"
+                    data-tab="dessert">
+                🍰 دسر
+            </button>
+
+        </nav>
+
+        <!-- بار گرم -->
+
+        <section id="hot"
+                 class="menu-section active-section">
+
+            <div class="menu-item">
+                <span>اسپرسو</span>
+                <span>۸۰,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>آمریکانو</span>
+                <span>۹۵,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>لاته</span>
+                <span>۱۲۰,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>کاپوچینو</span>
+                <span>۱۳۰,۰۰۰ تومان</span>
+            </div>
+
+        </section>
+
+        <!-- بار سرد -->
+
+        <section id="cold"
+                 class="menu-section">
+
+            <div class="menu-item">
+                <span>آیس لاته</span>
+                <span>۱۳۰,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>موهیتو</span>
+                <span>۱۱۰,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>لیموناد</span>
+                <span>۹۰,۰۰۰ تومان</span>
+            </div>
+
+        </section>
+
+        <!-- پیتزا -->
+
+        <section id="pizza"
+                 class="menu-section">
+
+            <div class="menu-item">
+                <span>پپرونی</span>
+                <span>۳۵۰,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>مخصوص FR</span>
+                <span>۴۲۰,۰۰۰ تومان</span>
+            </div>
+
+        </section>
+
+        <!-- پاستا -->
+
+        <section id="pasta"
+                 class="menu-section">
+
+            <div class="menu-item">
+                <span>آلفردو</span>
+                <span>۳۲۰,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>پنه چیکن</span>
+                <span>۳۱۰,۰۰۰ تومان</span>
+            </div>
+
+        </section>
+
+        <!-- شیک -->
+
+        <section id="shake"
+                 class="menu-section">
+
+            <div class="menu-item">
+                <span>شیک نوتلا</span>
+                <span>۱۸۰,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>شیک شکلات</span>
+                <span>۱۷۰,۰۰۰ تومان</span>
+            </div>
+
+        </section>
+
+        <!-- دسر -->
+
+        <section id="dessert"
+                 class="menu-section">
+
+            <div class="menu-item">
+                <span>چیزکیک</span>
+                <span>۱۴۰,۰۰۰ تومان</span>
+            </div>
+
+            <div class="menu-item">
+                <span>براونی</span>
+                <span>۱۳۰,۰۰۰ تومان</span>
+            </div>
+
+        </section>
+
+        <div class="qr-box">
+
+            <h3>اسکن برای مشاهده منو</h3>
+
+            <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://frcoffee.ir"
+                alt="QR">
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
